@@ -1,0 +1,5 @@
+export enum roles {
+    CONTENT_CREATOR = 'CONTENT_CREATOR',
+    COURSE_MENTOR = 'CONTENT_CREATOR'
+}
+
