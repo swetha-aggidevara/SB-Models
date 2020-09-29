@@ -1,5 +1,3 @@
-import { Enabled } from './../enum/content';
-
 export interface Trackable { 
     enabled: string;
     autoBatch: string;

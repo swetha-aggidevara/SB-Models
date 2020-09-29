@@ -1,4 +1,4 @@
-import { ICertificate, certCriteria, ICredential } from './../interfaces/trackable';
+import { ICertificate, certCriteria, ICredential } from './../../interfaces/trackable';
 import { Observable } from 'rxjs';
 import { Batch } from './batch';
 

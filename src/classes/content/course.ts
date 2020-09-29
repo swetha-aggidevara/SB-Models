@@ -5,5 +5,3 @@ class Course extends Collection {
         super(metaData);
     }
 }
-// const course = new Course({});
-// const trackable = course.isTrackableCollection();

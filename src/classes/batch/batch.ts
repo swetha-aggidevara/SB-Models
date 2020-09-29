@@ -1,6 +1,6 @@
 import { Content } from '@project-sunbird/client-services/models';
-import { IUser } from './../interfaces/user';
-import { IBatch } from './../interfaces/trackable';
+import { IUser } from './../../interfaces/user';
+import { IBatch } from './../../interfaces/trackable';
 import { Observable } from 'rxjs';
 export class Batch implements IBatch {
     identifier: string;

@@ -1,8 +1,6 @@
-import { Enabled } from '../enum/content';
-import { IUser } from './../interfaces/user';
-import { Content } from '@project-sunbird/client-services/models';
-import { Batch } from './batch';
-import { ICredential, Trackable, IBatch } from '../interfaces/trackable';
+import { IUser } from './../../interfaces/user';
+import { Batch } from '../batch/batch';
+import { ICredential, Trackable } from './../../interfaces/trackable';
 import { BaseContent } from './basecontent';
 import * as _ from 'lodash-es';
 
@@ -20,16 +18,13 @@ export class Collection extends BaseContent {
         });
     }
 
-
-
-     
     /**
      * @description checks whether a collection is trackable or not
      * @returns boolean
      */
     isTrackableCollection(): boolean {
         console.log('isTrackableCollection' );
-        return this.trackable.enabled.toLowerCase() === Enabled.YES;
+        return;
     }
 
     /**
@@ -37,8 +32,6 @@ export class Collection extends BaseContent {
      * @description checks whether a batch can be created for the collection 
      * @returns boolean
      */
-
-
     canCreateBatch(user:IUser): boolean {
         console.log('canCreateBatch');
         return true;
